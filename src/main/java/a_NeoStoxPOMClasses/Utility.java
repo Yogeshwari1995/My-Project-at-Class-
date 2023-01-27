@@ -45,7 +45,9 @@ public class Utility
 	public static void implicitWait(WebDriver driver, int time)
 	{
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(time));
+		
 		Reporter.log("Applied impicit wait of "+time, true);
+		//comment
 	}
 	public static void scrollingToElement(WebDriver driver, WebElement element)
 	{
